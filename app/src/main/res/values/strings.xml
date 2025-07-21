@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Learning App</string>
+    <string name="welcome_to_learning">Welcome to Learning</string>
+    <string name="sign_in_view">Sign in View</string>
+    <string name="email_hint">huzaifa@gmail.com</string>
+    <string name="logo_image">Logo Image</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+</resources>

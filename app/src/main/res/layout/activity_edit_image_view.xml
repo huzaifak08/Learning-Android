@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditImageViewActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_view"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="@string/logo_image"
+        android:id="@+id/imageView"
+        android:src="@drawable/booqly"
+        android:scaleType="fitCenter"
+        app:tint="@color/material_dynamic_tertiary80"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:ems="50"
+        android:hint="@string/email_hint"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="20sp"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:ems="10"
+
+        />
+
+
+</LinearLayout>
