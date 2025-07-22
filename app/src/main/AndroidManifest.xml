@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningApp">
         <activity
-            android:name=".ExplicitIntentActivity"
+            android:name=".ShareBundleToActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShareBundleFromActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,8 +24,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ImplicitIntentActivity"
+            android:name=".ExplicitIntentActivity"
             android:exported="false"/>
+        <activity
+            android:name=".ImplicitIntentActivity"
+            android:exported="false" />
         <activity
             android:name=".MenuActivity"
             android:exported="false" />
