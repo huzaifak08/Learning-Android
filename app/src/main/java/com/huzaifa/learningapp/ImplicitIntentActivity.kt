@@ -27,6 +27,7 @@ class ImplicitIntentActivity : AppCompatActivity() {
         val openPhoneCallButton = findViewById<Button>(R.id.openPhoneCall);
         val openCameraButton = findViewById<Button>(R.id.openCamera);
         val shareButton = findViewById<Button>(R.id.shareButton);
+        val backButton = findViewById<Button>(R.id.backButton);
 
         openWebPageButton.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.huzaifa.uno/"))
@@ -52,6 +53,12 @@ class ImplicitIntentActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT,text);
             startActivity(Intent.createChooser(intent,"Share Via"))
 
+        }
+
+        backButton.setOnClickListener {
+            val intent = Intent(this,ExplicitIntentActivity::class.java)
+            startActivity(intent);
+            finish() // for Push Replacement:
         }
     }
 }

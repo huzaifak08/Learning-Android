@@ -12,18 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningApp">
         <activity
-            android:name=".ImplicitIntentActivity"
+            android:name=".ExplicitIntentActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
-            android:name=".MenuActivity"
+            android:name=".ImplicitIntentActivity"
             android:exported="false"/>
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
         <activity
             android:name=".CustomCardActivity"
             android:exported="false" />
@@ -32,7 +34,7 @@
             android:exported="false" />
         <activity
             android:name=".ConstrainsLayoutActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".LinearLayoutActivity"
             android:exported="false" />
